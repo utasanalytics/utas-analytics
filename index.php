@@ -1,4 +1,4 @@
-<?php include("Headers/basic_info.php");?>
+<?php include("Headers/header.php");?>
     
 </body>
 </html>
