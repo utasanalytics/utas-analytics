@@ -1,4 +1,3 @@
 <?php include("Headers/header.php");?>
     
-</body>
-</html>
+<?php include("Footers/footer.php");?>
