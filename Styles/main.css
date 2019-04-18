@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+* {
+    box-sizing: border-box;
+    font-family: Indie Flower;
+    color: #777;
+}
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*This section is the entire window of the navigation area*/
+.main-wrapper {
+    background-color: rgba(0, 0, 0, .6);
+    /*Photo by Suzy Hazelwood from Pexels*/ 
+    background-image: url("../Pictures/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    position: relative;
+}
+
+/*This section handles the buttons linking to other resources in the top navbar*/
+
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .3em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .1)
+}
+
+.main_nav {
+    text-align:center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    border-bottom: 2px solid rgba(255,255,255,.3)
+}
+
+.main_nav li {
+    padding: 0 1%;
+}
+
+/*CONTENT SECTION*/
+.content-wrapper {
+height: 900px;
+overflow: auto;
+}
+
+/* THE SIDEBAR */
+.title{
+	text-align: center;
+	color: #f2f2f2;
+	padding-top: 20px;
+}
+
+.sidebar{
+    float: left;
+    height: 100%;
+	width: 15%;
+	background-color: #333;
+}
+
+.sidebar ul{
+	width: 100%;
+	padding-top: 200px;
+}
+
+.sidebar ul li{
+	list-style: none;
+	line-height: 40px;
+}
+
+.sidebar ul li a{
+	display: block;
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+.sidebar ul li a:hover{
+	background-color: #ddd;
+	color: black;
+}
+
+/*PAGE basics*/
+.main {
+	float: right;
+	height: 100%;
+	width: 85%;
+}
+
+.content {
+	padding: 150px 350px;
+	color: #f2f2f2;
+
+}
+
+/* HOME PAGE */
+
+.main.home {
+    background-color: rgba(0, 0, 0, .6);
+    /*Photo by Suzy Hazelwood from Pexels*/ 
+    background-image: url("../Pictures/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    position: relative;
+}
+
+.container.home {
+    background: #ddd;
+    height: 600px;
+    border: 2px solid black;
+}
+
+
+/* FAQ PAGE */
+
+.main.faq {
+    background-image: url("../Images/uni.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.search-bar input{
+	width: 300px;
+	 
+}
+
+.search-bar button{
+	padding: 7px 15px;
+
+}
+
+/* LOGIN PAGE */
+
+.main.login {
+    text-align: center;
+    background-color: dodgerblue;
+}
+
+.content.login {
+    margin: auto;
+    padding-top: 25%;
+
+}
+
+.login-window input{
+    width: 444px;
+    height: 40px;
+    font-size: 30px;
+}
+
+/* STATISTICS PAGE */
+
+.main.stats {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+    /*Photo by Suzy Hazelwood from Pexels*/ 
+    background-image: url("../Pictures/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    position: relative;
+}
+
+.container.stats {
+    background: #ddd;
+    height: 600px;
+    border: 2px solid black;
+}
+
+
+/* FOOTER SECTION */
+
+.footer-wrapper {
+    clear: left;
+    background-color: #777;
+    border-top: 2px solid #333;
+    }
+
+.footer.note {
+    color: #ddd;
+    margin: auto;
+    padding: 5px;
+    text-align: right;
+}
