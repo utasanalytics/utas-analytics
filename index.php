@@ -17,8 +17,5 @@
 			
 		</div>
 
-
-
-
 <!--Contains closing tags for body and html-->
 <?php include("Footers/footer.php");?>
