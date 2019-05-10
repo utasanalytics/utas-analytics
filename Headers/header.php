@@ -13,14 +13,7 @@
         
     <div class="main-wrapper">
 <!-- Displays a navigation toolbar at the top of the screen so the user can navigate the site-->
-        <nav class="nav main_nav">
-
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="login_logout.php">LOGIN!!!</a></li>
-                <li><a href="login_logout.php">LOGIN!!!</a></li>
-                <li><a href="login_logout.php">LOGIN!!!</a></li>
-            </ul>            
+        <nav class="nav main_nav">          
 
             <div>
                 <?php

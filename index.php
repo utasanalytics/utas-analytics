@@ -3,17 +3,17 @@
 
 		<!-- The main section for Home-->
 		<div class="main home">
-			<?php 
+
+            <!-- The content for the Home section  -->
+			<div class="content home">
+                			<?php 
 				if (isset($_SESSION['userId'])) {
 					echo '<p>You are logged in!</p>';
 				}
 				else {
 					echo '<p>You are logged out!</p>';
 				}
-			?>
-            <!-- The content for the Home section  -->
-			<div class="content home">
-                
+				?>
                 <div class="container home">
                     <h2>BICT/MITS HELP SITE</h2>
 
