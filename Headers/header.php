@@ -11,14 +11,44 @@
 </head>
 <body>
         
-        <div class="main-wrapper">
+    <div class="main-wrapper">
 <!-- Displays a navigation toolbar at the top of the screen so the user can navigate the site-->
-            <nav class="nav main_nav">
-                    <ul>
-                        <li><a href="login_logout.php">LOGIN!!!</a></li>
-                    </ul>
-            </nav>
-        </div>
+        <nav class="nav main_nav">
+
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="login_logout.php">LOGIN!!!</a></li>
+                <li><a href="login_logout.php">LOGIN!!!</a></li>
+                <li><a href="login_logout.php">LOGIN!!!</a></li>
+            </ul>            
+
+            <div>
+                <?php
+                    if (isset($_SESSION['userId'])) {
+                        echo '<form action="includes/logout.inc.php" method="post">
+                        <button name="logout-submit" type="submit">Logout</button>
+                    </form>';
+                        
+                    }
+                    else {
+                        echo '<form action="includes/login.inc.php" method="post">
+                        <input name="mailuid" type="text" placeholder="Email...">
+                        <input name="pwd" type="password" placeholder="">
+                        <button name="login-submit" type="submit">Login</button>
+                    </form>
+                    <a href="signup.php">Signup</a>';
+                    }
+                ?>
+
+
+
+            </div>
+
+
+            
+
+        </nav>
+    </div>
         <!-- The sidebar -->
         <div class="content-wrapper">
             <div class="sidebar">
