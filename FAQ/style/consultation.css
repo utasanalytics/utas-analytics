@@ -1,0 +1,54 @@
+/* THE WHOLE CONTAINER */
+
+html{
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.container {
+	height: 100%;
+}
+
+.main{
+	float: right;
+	height: 100%;
+	width: 85%;
+
+}
+
+
+.content {
+	padding: 150px 350px;
+	color: black;
+
+}
+
+.form {
+	width: 500px;
+	background: aqua;
+}
+
+.form h2{
+	text-align: center;
+}
+
+.form input {
+	border: 0;
+	display: block;
+	text-align: center;
+	margin: 5px auto;
+	padding: 14px 10px;
+	width: 200px;
+	border-radius: 50px;
+	border: 0;
+	outline: none;
+
+}
+
+.form input[type = "submit"]:hover{
+	background: blue;
+}
