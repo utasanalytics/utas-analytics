@@ -1,66 +1,58 @@
 <!--Contains basic starting html code-->
 <?php include("Headers/header.php");?>
-<!--Insert Your CSS include statement here-->
+<!-- The main section for Home-->
+<div class="body-container">
 
-<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
-
-<div class="container">
-		<!-- The sidebar -->
-		<div class="sidebar">
-			<h3 class="title">ANALYTICS BICT & MITS </h3>
-			<ul>
-				<li><a href="">Unit Explorer</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-				<li><a href="">Consultation</a></li>
-				<li><a href="">Profile</a></li>
-			</ul>
+	<!-- The content for the Home section  -->
+	<div class="content-container">
+		<div class="content-header">
+			<h1>Consultation</h1>
 		</div>
 
-		<!-- The main section for FAQ-->
-		<div class="main">
-
-			<!-- The Login for the FAQ section  -->
-			<div class="login"><button type="submit">Login/Logout</button></div>
-
-
-            <!-- The content for the FAQ section  -->
-			<div class="content">
+		<div class="content-body">
+			<?php 
+			if (isset($_SESSION['userId'])) {
+				echo '
+				<div class="content-consult">
 				
-				<h2>Book a Consultation:</h2>
+					<h2>Book a Consultation:</h2>
 				
-				<form>
-					<b>Staff Name:</b>
-					<select name="staff">
-						<option>Soonja</option>
-						<option>Erin</option>
-						<option>Matthew</option>
-					</select><br><br>
+					<form>
+						<b>Staff Name:</b>
+						<select name="staff">
+							<option>Soonja</option>
+							<option>Erin</option>
+							<option>Matthew</option>
+						</select><br><br>
 
-					<b>Time:</b>
-					<input type="Time" name="time"><br><br>
+						<b>Time:</b>
+						<input type="Time" name="time"><br><br>
 
-					<b>Location: </b>
-					<select name="location">
-						<option>Hobart</option>
-						<option>Launceston</option>
-					</select><br><br>
+						<b>Location: </b>
+						<select name="location">
+							<option>Hobart</option>
+							<option>Launceston</option>
+						</select><br><br>
 
-					<b>Utas ID: </b>
-					<input type="text" name="id"><br><br>
+						<b>Utas ID: </b>
+						<input type="text" name="id"><br><br>
 
-					<b>Email: </b>
-					<input type="Email" name="id"><br><br>
+						<b>Email: </b>
+						<input type="Email" name="id"><br><br>
 
-					<input type="submit" value="submit">
+						<input type="submit" value="submit">
 
-				</form>
+					</form>
 
-			</div>
-			
+				</div>';
+			} else {
+				echo '
+					<p>You are currently logged out!</p>
+					<p>In order to view this website please signup and login</p>';
+			}
+			?>
 		</div>
-
-
-
-
+	</div>
+</div>
 <!--Contains closing tags for body and html-->
 <?php include("Footers/footer.php");?>

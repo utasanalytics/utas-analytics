@@ -5,3 +5,7 @@ emailUsers TINYTEXT NOT NULL,
 pwdUsers LONGTEXT NOT NULL
 );
 
+
+
+
+/*Photo by Suzy Hazelwood from Pexels*/
