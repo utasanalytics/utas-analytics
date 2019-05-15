@@ -1,0 +1,31 @@
+.sign {
+	text-align: center;
+	width: 300px;
+	overflow: hidden;
+}
+
+.sign input {
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	outline: none;
+	padding: 20px;
+	border: 1px solid rgba(0,0,0,0);
+	border-bottom-color: red;
+	background: transparent;
+}
+
+.sign button {
+	width: 120px;
+	height: 55px;
+	border: 0;
+	background: red;
+	color: white;
+	border-radius: 50px;
+}
+
+
+.sign button:hover {
+	background-color: blue;
+
+}
