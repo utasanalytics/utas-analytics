@@ -5,6 +5,12 @@ emailUsers TINYTEXT NOT NULL,
 pwdUsers LONGTEXT NOT NULL
 );
 
+CREATE TABLE news (
+idNews int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+message LONGTEXT NOT NULL,
+date TIME NOT NULL
+);
+
 
 
 

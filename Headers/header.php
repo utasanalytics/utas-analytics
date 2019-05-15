@@ -1,4 +1,8 @@
-<?php session_start();?>
+<?php 
+session_start();
+require 'includes/dbh.inc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +11,7 @@
     <title>BICT/MITS Help Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="Styles/main.css">
-    <script src="JavaScript/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
         
