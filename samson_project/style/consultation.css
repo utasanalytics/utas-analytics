@@ -1,0 +1,76 @@
+/* THE WHOLE CONTAINER */
+
+html{
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background-image: url("../image/consult_img.jpg");
+	background-position: left;
+}
+
+.container {
+	height: 100%;
+}
+
+.main{
+	float: right;
+	height: 100%;
+	width: 85%;
+
+}
+
+
+.content {
+	padding: 150px 350px;
+	color: black;
+
+}
+
+.booking {
+	width: 500px;
+	background: transparent;
+	color: white;
+}
+
+
+.booking select{
+	background: transparent;
+	padding: 10px;
+	width: 100%;
+	height: 50px;
+	border: none;
+	font-size: 15px;
+}
+
+
+.booking input[type="text"],[type="email"]{
+	width: 100%;
+	text-align: center;
+	height: 20px;
+	outline: none;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0);
+	border-bottom-color: white;
+	background: transparent;
+	color: white;
+}
+
+
+.booking input[type="submit"] {
+	width: 120px;
+	height: 55px;
+	border: 0;
+	background: red;
+	color: white;
+	border-radius: 50px;
+}
+
+
+.booking input[type="submit"]:hover {
+	background-color: blue;
+
+}
+

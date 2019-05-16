@@ -1,0 +1,66 @@
+/* THE WHOLE CONTAINER */
+
+html{
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.container {
+	height: 100%;
+	background-image: url("../image/faq_img.jpg");
+	background-position: left;
+
+}
+
+
+/* Main */
+
+.main{
+	float: right;	
+}
+
+
+.content {
+	padding: 150px 350px;
+	color: #fff;
+
+}
+
+.search-bar input{
+	width: 600px;
+	padding: 15px 20px;
+	border-radius: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	 
+}
+
+.search-bar input place-holder {
+	color: #fff;
+}
+
+.search-bar button{
+	width: 120px;
+	height: 55px;
+	border: 0;
+	background: red;
+	color: white;
+	border-radius: 50px;
+}
+
+.search-bar button:hover {
+	background-color: blue;
+
+}
+
+.info {
+	word-spacing: 2px;
+	font-size: 120%;
+}
+
+
+
