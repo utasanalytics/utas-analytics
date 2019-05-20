@@ -1,0 +1,67 @@
+/* THE WHOLE CONTAINER */
+
+html{
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background-image: url("consult_img.jpg");
+	background-position: left;
+}
+
+.container {
+	height: 100%;
+}
+
+.main{
+	float: right;
+	height: 100%;
+	width: 85%;
+
+}
+
+
+.content {
+	padding: 150px 350px;
+	color: black;
+
+}
+
+.booking {
+	width: 500px;
+	background: transparent;
+	color: white;
+}
+
+.consulting table, th, td {
+	border: 1px solid black;
+	border-color: white;
+	padding: 6px;
+
+}
+
+.consulting th, td:hover{
+	background-color: blue;
+}
+
+
+
+
+
+.booking input[type="submit"] {
+	width: 120px;
+	height: 55px;
+	border: 0;
+	background: red;
+	color: white;
+	border-radius: 50px;
+}
+
+
+.booking input[type="submit"]:hover {
+	background-color: blue;
+
+}
+
