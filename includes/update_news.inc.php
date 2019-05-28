@@ -1,21 +1,22 @@
 <?php
+/*depending on how the user got to this page different processes will occur, this is determined by the submit button name*/
 
-require 'dbh.inc.php';
+
+    
+    require 'dbh.inc.php';
+    /*this section is in charge of updating items in the masterlist*/
+
+    $title = $_POST['title'];
+    $message = $_POST['message'];
 
 
-$sql = "SELECT * FROM news";
-$result = mysqli_query($conn, $sql);
+    $sql = "INSERT INTO news (message, title) VALUES ('$message', '$title')";
 
-if (mysqli_num_rows($result) > 0) {
-
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "<li>";
-        echo $row['title'];
-        echo $row['message'];
-        echo "</li>";
+    if (mysqli_query($conn, $sql)) {
+        header("Location: ../index.php?news=success");
+        exit();
+    } else {
+        header("Location: ../index.php?error=sqlerror");
+        exit();
     }
-} else {
-    echo "There is no news!";
-}
-
 

@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-
 * {
     box-sizing: border-box;
-    font-family: Indie Flower;
+    font-family: 'PT Serif', serif;
     color: #777;
 }
 html, body {
@@ -13,10 +11,7 @@ html, body {
 
 /*This section is the entire window of the navigation area  */
 .header-container {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("../Pictures/Header Background.jpg");
-    background-blend-mode: multiply;
-    background-size: cover;
+    background-color: rgba(48, 45, 45, 0.6);
     border-bottom: 2px solid rgba(255,255,255,.3);
 }
 
@@ -49,13 +44,22 @@ html, body {
     display: inline;
 }
 
-.header-login {
+.header_login {
     float: right;
+    overflow: auto;
+    
+}
+.header_login ul {
+    display: inline;
+}
 
+.header_login li {
+    display: inline;
 }
 
 .navform {
-    display: inline;
+    display: inline-block;
+    text-align: right
 }
 
 /* THE CONTENT SECTION */
@@ -72,7 +76,7 @@ html, body {
     background-color: #333;
     height: 90%;
     width: 66%;
-    border: 2px solid grey;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .content-header h1{
@@ -82,21 +86,112 @@ html, body {
     margin: 0;
 }
 
+.content-body {
+    text-align: center;
+}
+
 .content-body p {
     text-align: center;
 }
 
+.news_container {
+    text-align: center;
+}
+
+/* HOME PAGE */
+
+.newsreel {
+    margin-top: 100px;
+    list-style: none;
+}
+
+.newsreel h2 {
+    margin-bottom: 0;
+}
+
+.newsreel p {
+    margin-top: 0;
+}
+
 /* FAQ PAGE */
 
-.search-bar input{
-	width: 300px;
+.search-bar-faq input{
+	width: 600px;
+	padding: 15px 20px;
+	border-radius: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
 	 
 }
 
-.search-bar button{
-	padding: 7px 15px;
+.search-bar-faq input place-holder {
+	color: #fff;
+}
+
+.search-bar-faq button{
+	width: 120px;
+	height: 55px;
+	border: 0;
+	background: rgba(158, 21, 21, 0.712);
+	color: white;
+	border-radius: 50px;
+}
+
+.search-bar-faq button:hover {
+	background-color: rgba(4, 4, 71, 0.637);
 
 }
+
+.info-faq {
+	word-spacing: 2px;
+	font-size: 120%;
+}
+
+
+/* CONSULTATION PAGE */
+
+
+.content-consult {
+	padding: 150px 350px;
+	color: black;
+
+}
+
+.booking-consult {
+	width: 500px;
+	background: transparent;
+	color: white;
+}
+
+.consulting table, th, td {
+	border: 1px solid black;
+	border-color: white;
+	padding: 6px;
+
+}
+
+.consulting th, td:hover{
+	background-color: blue;
+}
+
+
+.booking-consult input[type="submit"] {
+    width: 120px;
+	height: 55px;
+	border: 0;
+	background: rgba(158, 21, 21, 0.712);
+	color: white;
+	border-radius: 50px;
+}
+
+
+.booking-consult input[type="submit"]:hover {
+	background-color: rgba(4, 4, 71, 0.637);
+
+}
+
+
+
 
 /* FOOTER SECTION */
 
@@ -111,4 +206,10 @@ html, body {
     margin: auto;
     padding: 5px;
     text-align: right;
+}
+
+/*UNIT EXPLORER*/
+
+.content.unit {
+    text-align: center;
 }

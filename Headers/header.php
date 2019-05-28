@@ -11,7 +11,9 @@ require 'includes/dbh.inc.php';
     <title>BICT/MITS Help Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="Styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
 <body>
         
@@ -25,17 +27,21 @@ require 'includes/dbh.inc.php';
                 <li><a href="consultation.php">Consultation</a></li>
             </ul>
         </div>
-        <div class="header-login">
+        <div class="header_login">
             <?php
             if (isset($_SESSION['userId'])) {
-                echo '<form class="navform" action="includes/logout.inc.php" method="post">
+                echo '
+                <form class="navform" action="includes/logout.inc.php" method="post">
+		            <ul>
+                        <li><a href="user.php">Welcome '. $_SESSION['userUid'] .'</a></li>
+                    </ul>
                 <button name="logout-submit" type="submit">Logout</button>
             </form>';
                 
             }
             else {
                 echo '<form class="navform" action="includes/login.inc.php" method="post">
-                <input name="mailuid" type="text" placeholder="Email...">
+                <input name="mailuid" type="text" placeholder="Username...">
                 <input name="pwd" type="password" placeholder="Password...">
                 <button name="login-submit" type="submit">Login</button>
                 </form>

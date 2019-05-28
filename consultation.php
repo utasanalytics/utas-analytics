@@ -13,38 +13,89 @@
 			<?php 
 			if (isset($_SESSION['userId'])) {
 				echo '
+
 				<div class="content-consult">
+			
 				
+				<form class="booking-consult">
+
 					<h2>Book a Consultation:</h2>
+
+					<table>
 				
-					<form>
-						<b>Staff Name:</b>
-						<select name="staff">
-							<option>Soonja</option>
-							<option>Erin</option>
-							<option>Matthew</option>
-						</select><br><br>
+   
+			     <label>Staff: </label>
+        <select name="staff">
+         <option value="select">Select Staff</option>
+         <option value="soonja">Soonja</option>
+         <option value="soonja">Matthew</option>
+         <option value="soonja">Erin</option>
+        </select>
+   
+     <table class="consultation">
 
-						<b>Time:</b>
-						<input type="Time" name="time"><br><br>
+      <tr>
+       <th></th>
+       <th>Monday </th>
+       <th>Tuesday </th>
+       <th>Wednesday </th>
+       <th>Thursday </th>
+       <th>Friday </th>
+      </tr>
 
-						<b>Location: </b>
-						<select name="location">
-							<option>Hobart</option>
-							<option>Launceston</option>
-						</select><br><br>
+       <tr>
+         <td>09:00-10:00</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
 
-						<b>Utas ID: </b>
-						<input type="text" name="id"><br><br>
+      <tr>
+         <td>10:00-11:00</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
 
-						<b>Email: </b>
-						<input type="Email" name="id"><br><br>
+       <tr>
+         <td>13:00-14:00</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
 
-						<input type="submit" value="submit">
+      <tr>
+         <td>15:00-16:00</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
 
-					</form>
+      <tr>
+         <td>16:00-17:00</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+     
+				</table>
 
-				</div>';
+         <input type="submit" name="book">
+
+				</form>
+
+			</div>
+			';
 			} else {
 				echo '
 					<p>You are currently logged out!</p>
